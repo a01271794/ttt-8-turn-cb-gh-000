@@ -27,7 +27,7 @@ def valid_move?(board, index)
   if (position_taken?(board, index) == false && board_number?(index) == true)
     return true
   else
-    return false    
+    return false
   end
 end
 def turn(board)
