@@ -30,6 +30,10 @@ def valid_move?(board, index)
     return false
   end
 end
+def move(board, index, code="X")
+  board[index] = code
+  return board
+end
 def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.chomp
